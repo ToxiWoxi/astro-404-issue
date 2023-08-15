@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+/* Redirect example */
+const url: string = Astro.url.pathname.endsWith('/')? Astro.url.pathname.toLowerCase().slice(0, -1) : Astro.url.pathname.toLowerCase()
+if (url === '/index')        return Astro.redirect('/', 307)
+---
+<Layout title="404">
+	<p>404 (SSR)</p>
+	<a href="/">Index page</a>
+</Layout>
