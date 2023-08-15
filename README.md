@@ -21,14 +21,14 @@
 However, this doesn't allow you to use the 404 page to do case-corrections and handle aliases
 - The `latest-prerendered` branch dedicated to this behavior
 ## Branches and their issues
-| Branch                                                                                         | Bad Routes            | Aliases                   | Case-correction |
-|------------------------------------------------------------------------------------------------|-----------------------|---------------------------|-----------------|
-| [astro@2.9.6](https://astro-404-issue.pages.dev)                                               | Renders `404.astro`   | Working                   | Working         |
-| [astro@2.9.7](astro-2-9-7.astro-404-issue.pages.dev)                                           | Returns nothing       | Configured redirects only | Not working     |
-| [astro@2.10.5-cloudflare@6.6.2](https://astro-2-10-5-cloudflare-6-6.astro-404-issue.pages.dev) | Returns nothing       | Configured redirects only | Not working     |
-| [astro@2.10.5-cloudflare@6.7.0](astro-2-10-5-cloudflare-6-7.astro-404-issue.pages.dev)         | Returns `index.astro` | Configured redirects only | Not working     |
-| [latest](latest.astro-404-issue.pages.dev)                                                     | Returns `index.astro` | Configured redirects only | Not working     |
-| [latest-prerendered](latest-prerendered.astro-404-issue.pages.dev)                             | Renders `404.astro`   | Configured redirects only | Not working     |
+| Branch                                                                                                 | Bad Routes            | Aliases                   | Case-correction |
+|--------------------------------------------------------------------------------------------------------|-----------------------|---------------------------|-----------------|
+| [astro@2.9.6](https://astro-404-issue.pages.dev)                                                       | Renders `404.astro`   | Working                   | Working         |
+| [astro@2.9.7](https://astro-2-9-7.astro-404-issue.pages.dev)                                           | Returns nothing       | Configured redirects only | Not working     |
+| [astro@2.10.5-cloudflare@6.6.2](https://https://astro-2-10-5-cloudflare-6-6.astro-404-issue.pages.dev) | Returns nothing       | Configured redirects only | Not working     |
+| [astro@2.10.5-cloudflare@6.7.0](https://astro-2-10-5-cloudflare-6-7.astro-404-issue.pages.dev)         | Returns `index.astro` | Configured redirects only | Not working     |
+| [latest](https://latest.astro-404-issue.pages.dev)                                                     | Returns `index.astro` | Configured redirects only | Not working     |
+| [latest-prerendered](https://latest-prerendered.astro-404-issue.pages.dev)                             | Renders `404.astro`   | Configured redirects only | Not working     |
 ## Testing yourself
 You can test this on your own by cloning this repo. There is a branch for each of the versions mentioned above.
 ### Instructions
