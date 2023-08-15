@@ -6,6 +6,10 @@ const url: string = Astro.url.pathname.endsWith('/')? Astro.url.pathname.toLower
 if (url === '/index')        return Astro.redirect('/', 307)
 ---
 <Layout title="404">
-	<p>This is the 404 (SSR)</p>
-	<a href="/">Index page</a>
+	Version: {Astro.generator}
+	<p>
+		This is the 404 (SSR)
+		<br>
+		<a href="/">Index page</a>
+	</p>
 </Layout>
