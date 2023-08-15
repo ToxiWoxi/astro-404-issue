@@ -1,13 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
+export const prerender = true
 
-/* Redirect example */
-const url: string = Astro.url.pathname.endsWith('/')? Astro.url.pathname.toLowerCase().slice(0, -1) : Astro.url.pathname.toLowerCase()
-if (url === '/index')        return Astro.redirect('/', 307)
+import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="404">
 	<p>
-		This is the 404 (SSR)
+		This is the 404 (prerendered)
 		<br>
 		<a href="/">Index page</a>
 	</p>
