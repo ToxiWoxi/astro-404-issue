@@ -4,8 +4,17 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
     output: "server",
-    adapter: cloudflare(),
+    adapter: cloudflare({
+        routes: {
+            strategy: "exclude"
+        }
+    }),
     redirects: {
         '/index': '/'
-    }
+    },
+    vite: {
+        build: {
+            minify: false,
+        },
+    },
 });
